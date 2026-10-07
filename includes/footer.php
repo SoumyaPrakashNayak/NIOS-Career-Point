@@ -17,6 +17,7 @@
                 <div class="footer-col">
                     <h4 class="footer-col-title">Academic Programs</h4>
                     <ul class="footer-links-list">
+                        <li><a href="programs.php"><strong>All Programs Directory</strong></a></li>
                         <li><a href="10th.php">Direct 10th (Secondary)</a></li>
                         <li><a href="plus-two.php">+2 Senior Secondary</a></li>
                         <li><a href="plus-two.php">+2 Arts Stream</a></li>

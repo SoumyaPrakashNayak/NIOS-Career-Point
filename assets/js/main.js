@@ -108,15 +108,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Replay Intro Button Trigger
-    const replayButtons = document.querySelectorAll('.replay-intro-btn');
+    // 5. Interactive Stream / Program Filter Tabs
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const container = btn.closest('.program-browser-tabs');
+            if (container) {
+                container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            }
+            const targetCategory = btn.getAttribute('data-target');
+            if (targetCategory) {
+                document.querySelectorAll('.academic-card').forEach(card => {
+                    if (targetCategory === 'all' || card.getAttribute('data-category') === targetCategory) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        });
+    });
+
+    // 6. Interactive Stream Selection for +2 (Arts / Science / Commerce)
+    const streamPills = document.querySelectorAll('.stream-pill-btn');
+    streamPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            const group = pill.closest('.stream-tab-pills');
+            if (group) {
+                group.querySelectorAll('.stream-pill-btn').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+            }
+            const streamId = pill.getAttribute('data-stream');
+            if (streamId) {
+                document.querySelectorAll('.stream-detail-content').forEach(content => {
+                    content.style.display = (content.id === streamId) ? 'block' : 'none';
+                });
+            }
+        });
+    });
+
+    // 7. Replay Intro Button Trigger
+    const replayButtons = document.querySelectorAll('.replay-intro-btn, #replay-intro-btn');
     replayButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             if (typeof window.replayIntroAnimation === 'function') {
                 window.replayIntroAnimation();
             } else {
-                window.location.reload();
+                window.location.href = 'index.html';
             }
         });
     });

@@ -95,14 +95,14 @@
             <div class="hero-content">
                 <span class="eyebrow">Academic Guidance &amp; Consultancy • Estd. 2011 in Berhampur</span>
                 <h1 class="hero-headline">
-                    Empowering Learners Across Odisha to Complete Their Academic Journey.
+                    Your Next Chapter Starts Here.
                 </h1>
                 <p class="hero-lead">
-                    Personalized educational counselling and end-to-end admission guidance for Direct 10th (Secondary), +2 Senior Secondary (Arts, Science, Commerce), and University Degree programs through recognized boards and universities.
+                    Personalized educational counselling and certified admission pathways for Direct 10th (Secondary), +2 Senior Secondary (Arts, Science, Commerce), and UGC-recognized Degree programs in Berhampur, Odisha.
                 </p>
                 <div class="hero-ctas">
-                    <a href="#programs" class="btn btn-primary">Explore Academic Programs ↓</a>
-                    <a href="contact.php" class="btn btn-secondary">Get Free Counselling</a>
+                    <a href="#programs" class="btn btn-primary">Explore Academic Pathways ↓</a>
+                    <a href="contact.php" class="btn btn-secondary">Talk to a Counsellor</a>
                 </div>
                 <div class="hero-meta-points">
                     <div class="hero-meta-item">
@@ -124,16 +124,16 @@
             <div class="hero-media">
                 <div class="hero-frame">
                     <img 
-                        src="assets/images/nios-banner-orig.png" 
-                        alt="NIOS Career Point Berhampur Admission & Counselling" 
+                        src="assets/images/nios-building-centre.jpg" 
+                        alt="NIOS Career Point Berhampur Counselling Centre" 
                         class="hero-image"
                         width="700"
                         height="850"
                         loading="eager"
                     >
                     <div class="hero-caption">
-                        <span><strong>NIOS Career Point Berhampur</strong></span>
-                        <span>Estd. 2011 • Ganjam District</span>
+                        <span><strong>NIOS Career Point</strong></span>
+                        <span>Estd. 2011 • Gandhi Nagar, Berhampur</span>
                     </div>
                 </div>
             </div>
@@ -170,19 +170,32 @@
         </div>
     </section>
 
+    <!-- 2.5. EMOTIONAL STATEMENT SECTION (SCROLL STORY MOMENT) -->
+    <section class="emotional-statement-section" id="statement">
+        <div class="container container-narrow">
+            <span class="eyebrow eyebrow-gold">A Second Chance in Education</span>
+            <blockquote class="emotional-quote">
+                "Education doesn't always follow a straight line. <em>That's okay.</em>"
+            </blockquote>
+            <p class="emotional-narrative">
+                Whether you faced an unexpected setback in matriculation, stepped away from studies years ago, or are balancing full-time work with family commitments—an academic pause does not define your future. In Berhampur, NIOS Career Point provides clear, accredited, and deeply supportive pathways to complete your qualifications with dignity.
+            </p>
+        </div>
+    </section>
+
     <!-- 3. COURSES SECTION (EDITORIAL NUMBERED LIST) -->
     <section class="courses-editorial-section section-spacing" id="programs">
         <div class="container">
             <div class="section-header-editorial">
                 <div class="section-header-title">
                     <span class="eyebrow">Academic Programs</span>
-                    <h2>Structured Educational Pathways for Every Learner</h2>
+                    <h2>Choose Your Next Path.</h2>
                     <p>
                         Whether you need a second chance after an exam setback or are looking to advance your credentials while working, our accredited programs ensure recognized qualifications.
                     </p>
                 </div>
                 <div>
-                    <a href="contact.php" class="btn btn-secondary">Request Syllabus &amp; Fee Details →</a>
+                    <a href="programs.php" class="btn btn-secondary">Browse All Programs Directory →</a>
                 </div>
             </div>
 
@@ -254,6 +267,70 @@
                         <a href="post-graduation.php" class="btn btn-secondary btn-sm">Explore PG →</a>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3.5. WHO WE HELP (AUDIENCE SEGMENT MATRIX) -->
+    <section class="who-we-help-section" id="who-we-help">
+        <div class="container">
+            <div class="section-header-editorial">
+                <div class="section-header-title">
+                    <span class="eyebrow">Who We Help</span>
+                    <h2>Built for Every Stage of the Learning Journey</h2>
+                    <p>
+                        We provide supportive, non-judgmental educational guidance tailored to individuals facing unique life circumstances.
+                    </p>
+                </div>
+                <div>
+                    <a href="contact.php" class="btn btn-secondary">Discuss Your Academic Situation →</a>
+                </div>
+            </div>
+
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div>
+                        <span class="audience-tag">Second Chance</span>
+                        <h3 class="audience-title">Failed &amp; Dropout Students</h3>
+                        <p class="audience-desc">
+                            Overcome Class 10 or 12 board exam setbacks with flexible NIOS stream options and Transfer of Credit (TOC) to save your academic years.
+                        </p>
+                    </div>
+                    <a href="10th.php" class="audience-link">Explore 10th &amp; +2 <span>→</span></a>
+                </div>
+
+                <div class="audience-card">
+                    <div>
+                        <span class="audience-tag">Restart Studies</span>
+                        <h3 class="audience-title">Long Gap Learners</h3>
+                        <p class="audience-desc">
+                            Re-enter education after years away from school or college without embarrassment or confusing administrative barriers.
+                        </p>
+                    </div>
+                    <a href="about.php" class="audience-link">Our Guidance Model <span>→</span></a>
+                </div>
+
+                <div class="audience-card">
+                    <div>
+                        <span class="audience-tag">Career Growth</span>
+                        <h3 class="audience-title">Working Professionals</h3>
+                        <p class="audience-desc">
+                            Earn recognized Bachelor's (B.A, B.Com, B.Sc) or Master's degrees through accredited distance learning while maintaining your job.
+                        </p>
+                    </div>
+                    <a href="graduation.php" class="audience-link">Degree Options <span>→</span></a>
+                </div>
+
+                <div class="audience-card">
+                    <div>
+                        <span class="audience-tag">Future Ambition</span>
+                        <h3 class="audience-title">Higher Study Aspirants</h3>
+                        <p class="audience-desc">
+                            Attain valid board and university certificates recognized across India for NEET, JEE, UPSC, defence, and state government examinations.
+                        </p>
+                    </div>
+                    <a href="why-us.php" class="audience-link">Why Choose Us <span>→</span></a>
+                </div>
             </div>
         </div>
     </section>

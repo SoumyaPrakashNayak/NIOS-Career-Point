@@ -74,10 +74,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="10th.php" class="nav-link">
-                            Courses ▾
+                        <a href="programs.php" class="nav-link">
+                            Programs ▾
                         </a>
                         <div class="nav-dropdown">
+                            <a href="programs.php" class="dropdown-link">
+                                <strong>All Academic Programs</strong>
+                                <span class="dropdown-subtext">Master course overview &amp; pathways</span>
+                            </a>
                             <a href="10th.php" class="dropdown-link">
                                 Direct 10th (Secondary)
                                 <span class="dropdown-subtext">For failed or dropout learners</span>

@@ -71,8 +71,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="10th.html" class="nav-link active">Courses ▾</a>
+                        <a href="programs.html" class="nav-link active">Programs ▾</a>
                         <div class="nav-dropdown">
+                            <a href="programs.html" class="dropdown-link">
+                                <strong>All Academic Programs</strong>
+                                <span class="dropdown-subtext">Master course overview &amp; pathways</span>
+                            </a>
                             <a href="10th.html" class="dropdown-link">
                                 Direct 10th (Secondary)
                                 <span class="dropdown-subtext">For failed or dropout learners</span>
@@ -181,39 +185,84 @@
                             </ul>
                         </div>
 
-                        <!-- Streams Table -->
-                        <div style="background-color: #FFFFFF; border: 1px solid var(--border-color); padding: var(--space-lg); margin-bottom: 2rem;">
-                            <span class="eyebrow">Academic Streams</span>
-                            <h3>Available +2 Streams &amp; Subjects</h3>
-                            <p>Students must select 5 subjects with at least one language. Additional 6th or 7th subjects can also be taken.</p>
-                            
-                            <table class="academic-table">
-                                <thead>
-                                    <tr>
-                                        <th>Stream</th>
-                                        <th>Core Subjects</th>
-                                        <th>Key Career Pathways</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Science</strong></td>
-                                        <td>Physics, Chemistry, Biology, Mathematics, English, Computer Science</td>
-                                        <td>NEET (Medical/BDS/Nursing), JEE (Engineering), B.Sc, Pharmacy</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Commerce</strong></td>
-                                        <td>Accountancy, Business Studies, Economics, English, Data Entry</td>
-                                        <td>B.Com, BBA, CA/CS Foundation, Banking &amp; Financial Services</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Arts / Humanities</strong></td>
-                                        <td>History, Political Science, Economics, Odia/Hindi, Sociology, Geography</td>
-                                        <td>B.A, Law (CLAT), UPSC / State Civil Services, Teaching</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- Streams Interactive Selector -->
+                    <div style="background-color: #FFFFFF; border: 1px solid var(--border-color); padding: var(--space-lg); margin-bottom: 2rem;">
+                        <span class="eyebrow">Interactive Stream Explorer</span>
+                        <h3>Explore Available +2 Streams</h3>
+                        <p>Select your desired intermediate academic stream below to view syllabus subjects, career opportunities, and practical lab support.</p>
+                        
+                        <div class="stream-tab-pills" role="tablist">
+                            <button type="button" class="stream-pill-btn active" data-stream="stream-sci">Science Stream</button>
+                            <button type="button" class="stream-pill-btn" data-stream="stream-comm">Commerce Stream</button>
+                            <button type="button" class="stream-pill-btn" data-stream="stream-arts">Arts / Humanities</button>
                         </div>
+
+                        <!-- Science Content -->
+                        <div id="stream-sci" class="stream-detail-content" style="display: block;">
+                            <h4 style="color: var(--color-navy); margin-bottom: 0.5rem;">Science Stream (PCM / PCB / PCMB)</h4>
+                            <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                                Full academic equivalence for medical, engineering, nursing, and technical professions. Includes practical manual guidance and lab record verification.
+                            </p>
+                            <div class="feature-checklist">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Core Subjects:</strong> Physics, Chemistry, Biology, Mathematics, English, Computer Science.</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Entrances Validated:</strong> NEET (Medical &amp; BDS), JEE Main (Engineering), NISER, Pharmacy, BSc Nursing.</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Lab Practical Support:</strong> Step-by-step assistance with mandatory lab experiments and viva prep.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Commerce Content -->
+                        <div id="stream-comm" class="stream-detail-content" style="display: none;">
+                            <h4 style="color: var(--color-navy); margin-bottom: 0.5rem;">Commerce Stream</h4>
+                            <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                                Focused on commercial accounting, corporate principles, economics, and business computing. Perfect for future finance and managerial roles.
+                            </p>
+                            <div class="feature-checklist">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Core Subjects:</strong> Accountancy, Business Studies, Economics, English, Data Entry Operations.</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Career Gateways:</strong> CA Foundation, CS Foundation, CMA, B.Com Honours, BBA, Banking &amp; Financial Services.</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>High Pass Pacing:</strong> Practical scoring subjects that simplify exam clearance for working students.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arts Content -->
+                        <div id="stream-arts" class="stream-detail-content" style="display: none;">
+                            <h4 style="color: var(--color-navy); margin-bottom: 0.5rem;">Arts &amp; Humanities Stream</h4>
+                            <p style="font-size: 0.95rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                                Broad, rich curriculum covering social sciences, history, governance, and regional languages. Ideal for civil services and law aspirants.
+                            </p>
+                            <div class="feature-checklist">
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Core Subjects:</strong> History, Political Science, Economics, Odia, Hindi, English, Sociology, Geography.</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Future Aspirations:</strong> UPSC Civil Services, OPSC, LLB Law (CLAT), Journalism, B.A Degrees, Teaching (B.Ed).</div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✓</span>
+                                    <div><strong>Maximum Scoring Strategy:</strong> Tailored subject selections to secure high first-division percentages.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                         <!-- Benefits & Validity -->
                         <div style="background-color: #FFFFFF; border: 1px solid var(--border-color); padding: var(--space-lg);">
