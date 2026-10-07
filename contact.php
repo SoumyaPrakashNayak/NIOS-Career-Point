@@ -1,0 +1,186 @@
+<?php 
+$page_title = "Contact Us & Admissions Office | NIOS Career Point Berhampur";
+include 'includes/header.php'; 
+?>
+
+<main id="website">
+    <!-- Academic Page Hero -->
+    <section class="page-hero-academic">
+        <div class="container">
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.php">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Contact Us</span>
+            </nav>
+
+            <span class="eyebrow">Academic Guidance Centre • Berhampur</span>
+            <h1>Contact Our Admissions &amp; Counselling Office</h1>
+            <p class="lead">
+                Visit our physical counseling centre in Gandhi Nagar, call our helpline numbers, or submit an admission inquiry below. Our senior academic advisors are here to assist you.
+            </p>
+
+            <div class="program-meta-strip">
+                <div class="meta-box">
+                    <span class="meta-box-label">Central Helplines</span>
+                    <span class="meta-box-val">+91 93981 61800 / 96927 58200</span>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-box-label">Office Hours</span>
+                    <span class="meta-box-val">Mon - Sat: 9:00 AM – 7:30 PM</span>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-box-label">Headquarters</span>
+                    <span class="meta-box-val">Gandhi Nagar 1st Lane Extn., Berhampur</span>
+                </div>
+                <div class="meta-box">
+                    <span class="meta-box-label">Motto</span>
+                    <span class="meta-box-val">"No Issues Of Studies"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Grid -->
+    <section class="section-spacing" style="background-color: var(--color-bg-canvas);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.1fr 1.2fr; gap: var(--space-xl); align-items: flex-start;">
+                <!-- Left Column: Official Centre Contact Information -->
+                <div class="contact-centre-details">
+                    <div style="background-color: #FFFFFF; border: 1px solid var(--border-color); padding: var(--space-lg); margin-bottom: 2rem;">
+                        <span class="eyebrow">Physical Centre</span>
+                        <h2>Berhampur Admissions Office</h2>
+                        <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">
+                            Students and parents are warmly invited to visit our centre for one-on-one document verification and personalized course roadmaps.
+                        </p>
+
+                        <div class="centre-detail-item">
+                            <div class="centre-detail-icon">📍</div>
+                            <div class="centre-detail-text">
+                                <h5>Centre Address</h5>
+                                <p><strong>Gandhi Nagar 1st Lane Extension</strong>,<br>Back Side of Sai Complex,<br>Berhampur, Ganjam, Odisha - 760001</p>
+                            </div>
+                        </div>
+
+                        <div class="centre-detail-item">
+                            <div class="centre-detail-icon">📞</div>
+                            <div class="centre-detail-text">
+                                <h5>Direct Helplines</h5>
+                                <p>
+                                    <a href="tel:+919398161800"><strong>+91 93981 61800</strong></a><br>
+                                    <a href="tel:+919692758200">+91 96927 58200</a><br>
+                                    <a href="tel:+919827752949">+91 98277 52949</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="centre-detail-item">
+                            <div class="centre-detail-icon">⏰</div>
+                            <div class="centre-detail-text">
+                                <h5>Consultation Hours</h5>
+                                <p>Monday to Saturday: 9:00 AM – 7:30 PM<br><span style="color: var(--color-text-muted); font-size: 0.85rem;">Sunday: Open by prior appointment</span></p>
+                            </div>
+                        </div>
+
+                        <div class="centre-detail-item">
+                            <div class="centre-detail-icon">💬</div>
+                            <div class="centre-detail-text">
+                                <h5>WhatsApp Direct Assist</h5>
+                                <p>
+                                    <a href="https://wa.me/919398161800?text=Hello%20NIOS%20Career%20Point,%20I%20would%20like%20to%20enquire%20about%20admissions." target="_blank" rel="noopener noreferrer" style="color: #16a34a; font-weight: 600;">
+                                        Chat with Admissions Officer (+91 93981 61800) →
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="centre-map-container" style="border: 1px solid var(--border-color); background-color: #FFFFFF; padding: 0.65rem;">
+                        <iframe 
+                            class="centre-map-frame"
+                            title="NIOS Career Point Berhampur Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15053.882414736173!2d84.79250000000001!3d19.317500000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d50046b955555%3A0x7d0a27329596c567!2sGandhi%20Nagar%2C%20Brahmapur%2C%20Odisha%20760001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            style="width: 100%; height: 320px; border: 0; display: block;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Right Column: Institutional Admission Enquiry Form -->
+                <div class="contact-form-column">
+                    <div class="enquiry-form-card">
+                        <span class="eyebrow" style="color: var(--color-red);">Free Academic Counselling</span>
+                        <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Request Admission Assistance</h2>
+                        <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-bottom: 1.8rem;">
+                            Fill in your details below. An experienced counselor will review your requirements and provide clear information on admission cycles, eligibility, and fees.
+                        </p>
+
+                        <form class="enquiry-form">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="c-name">Full Name *</label>
+                                    <input type="text" id="c-name" class="form-control" placeholder="Candidate's full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-phone">Phone / WhatsApp *</label>
+                                    <input type="tel" id="c-phone" class="form-control" placeholder="e.g. 9398161800" required>
+                                </div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <label for="c-program">Program of Interest *</label>
+                                    <select id="c-program" class="form-control" required>
+                                        <option value="">-- Select Program --</option>
+                                        <option value="10th">Direct 10th (Secondary)</option>
+                                        <option value="+2-arts">+2 Senior Secondary (Arts)</option>
+                                        <option value="+2-science">+2 Senior Secondary (Science)</option>
+                                        <option value="+2-commerce">+2 Senior Secondary (Commerce)</option>
+                                        <option value="ug-ba">Graduation - B.A</option>
+                                        <option value="ug-bcom">Graduation - B.Com</option>
+                                        <option value="ug-bsc">Graduation - B.Sc</option>
+                                        <option value="ug-bca">Graduation - B.C.A</option>
+                                        <option value="ug-bba">Graduation - B.B.A</option>
+                                        <option value="pg-ma">Post Graduation - M.A</option>
+                                        <option value="pg-mcom">Post Graduation - M.Com</option>
+                                        <option value="pg-msc">Post Graduation - M.Sc</option>
+                                        <option value="pg-mba">Post Graduation - MBA</option>
+                                        <option value="pg-mca">Post Graduation - MCA</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="c-status">Current Academic Status</label>
+                                    <select id="c-status" class="form-control">
+                                        <option value="failed-board">Failed in 10th/12th Board</option>
+                                        <option value="dropout">School / College Dropout</option>
+                                        <option value="working">Working Professional</option>
+                                        <option value="homemaker">Homemaker</option>
+                                        <option value="fresh">Fresh Admission</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c-location">Your City / District</label>
+                                <input type="text" id="c-location" class="form-control" placeholder="e.g. Berhampur, Hinjilicut, Chatrapur, Parlakhemundi, Aska">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="c-message">Previous Academic Details / Specific Questions</label>
+                                <textarea id="c-message" class="form-control" placeholder="Mention previous school/board, failed subjects, or any specific questions..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.95rem;">
+                                Submit Admissions Enquiry →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php include 'includes/footer.php'; ?>

@@ -40,7 +40,10 @@
         headerBrandLogo = document.getElementById('header-brand-logo');
         skipBtn = document.getElementById('intro-skip-btn');
 
-        if (!introScreen) return;
+        if (!introScreen) {
+            document.body.classList.remove('intro-active');
+            return;
+        }
 
         // Check sessionStorage if single-visit mode is active
         if (!SHOW_INTRO_EVERY_TIME && sessionStorage.getItem(STORAGE_KEY) === 'true') {

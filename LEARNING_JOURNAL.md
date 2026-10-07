@@ -157,6 +157,75 @@ To ensure this journal remains high-leverage and actionable:
 
 ---
 
+### Entry #005: High-Fidelity SVG Spline Geometry Reconstruction (Replacing Polygon Approximations)
+- **Date**: 2026-10-07
+- **Category**: Vector Artwork Quality & Typography Fidelity
+- **Context**: Upgrading the vector artwork for NIOS and CAREER POINT letter shapes to eliminate jagged contours and pixelation at 1080p desktop resolutions while strictly keeping the element-by-element animation choreography intact.
+
+#### The Problem / Pitfall
+- The previous implementation approximated the glyphs using integer polygon point lists (`L x y`), creating dozens of stair-step segments per letter. When scaled up on large desktop viewports (where the logo is ~1,228px wide), the letter contours appeared visibly jagged, with uneven corners and rough curves.
+- In addition, an internal SVG `<feDropShadow>` filter caused a soft blur that dulled the letter edges underneath the lighting.
+
+#### The Solution & Breakthrough
+- **True Spline Vectorization per Component**:
+  - Leveraged high-precision VTracer Bézier spline curve extraction on isolated masks for each of the 16 brand elements.
+  - Reconstructed smooth cubic Bézier curves (`C`) for all curved contours (emblem nib shoulders, `O`, `S`, `C`, `A`, `R`, `P`) and clean straight segments (`L`) for vertical and horizontal strokes.
+  - Preserved mathematical geometry: the golden ball as a pure SVG `<circle cx="68.5" cy="12.2" r="6.0">` with radial gradient.
+  - Removed artificial `<filter id="brandDropGlow">` to maintain 100% crisp, razor-sharp vector contours at 100%, 200%, and 400% zoom.
+  - Preserved all 23 animation IDs and CSS classes (`unit-nios`, `elem-emblem`, `elem-letter-n`, `elem-letter-o`, `elem-letter-s`, `letter-c`, `letter-a`, `letter-r1`, `letter-e1`, `letter-e2`, `letter-r2`, `letter-p`, `letter-o2`, `letter-i2`, `letter-n2`, `letter-t`).
+  - Synchronized across [assets/images/nios-career-point.svg](file:///e:/SensorSpine/NIOS%20Career%20Point/assets/images/nios-career-point.svg), [index.php](file:///e:/SensorSpine/NIOS%20Career%20Point/index.php), and [index.html](file:///e:/SensorSpine/NIOS%20Career%20Point/index.html).
+
+#### Key Takeaway & Rule
+> **Rule**: Never approximate display typography using low-order polygon line lists. Trace or model individual letter glyphs using cubic Bézier splines (`C`) and exact lines (`L`) to keep the artwork animatable while ensuring vector crispness across all screen scales and zoom levels.
+
+---
+
+### Entry #006: SVG Transform Presentation Overrides & Compound Counter Cutouts (`fill-rule="evenodd"`)
+- **Date**: 2026-10-07
+- **Category**: SVG / CSS Transforms & Glyph Topology
+- **Context**: Resolving animation collapse and missing counter cutouts (solid 'O' instead of ring 'O') during vector letter quality upgrades.
+
+#### The Problem / Pitfall
+1. **CSS Transform Override Collision**: When individual SVG elements were extracted with local `(0, 0)` origins and placed using SVG presentation attributes `transform="translate(tx, ty)"`, CSS keyframe animations (such as `.let-c { transform: translateX(-24px); }`) completely overwrote the SVG `transform` attribute instead of compounding with it. In SVG2/CSS Transforms spec, CSS properties replace presentation attributes, collapsing animated elements to `(0, 0)` in a heap on screen.
+2. **Missing Counter Cutouts**: When foreground tracing segmented components, inner black fill paths (the cutout holes of letters 'O') were discarded, leaving only the outer solid perimeter disc without central counter holes.
+
+#### The Solution & Breakthrough
+1. **Baked Coordinates in ViewBox Space**: Baked all translation deltas `(tx, ty)` directly into the cubic Bézier spline strings (`M (x+tx) (y+ty) C ...`) in the absolute `0 0 400 80` coordinate space. Elements now have no SVG `transform` attribute, allowing CSS `transform: translateX(...)` animations to run seamlessly from their natural positions.
+2. **Compound Subpaths for Hollow Glyphs**: Compounded both outer perimeters (`M ... Z`) and inner counter holes (`M ... Z`) into single path definitions with `fill-rule="evenodd"` for both the blue 'O' in NIOS and the red 'O' in POINT, restoring the authentic brand rings.
+3. **Parity**: Synchronized identically across [assets/images/nios-career-point.svg](file:///e:/SensorSpine/NIOS%20Career%20Point/assets/images/nios-career-point.svg), [index.html](file:///e:/SensorSpine/NIOS%20Career%20Point/index.html), and [index.php](file:///e:/SensorSpine/NIOS%20Career%20Point/index.php).
+
+#### Key Takeaway & Rule
+> **Rule**: In animated SVG pipelines, NEVER put spatial placement `transform="translate(...)"` attributes on elements animated via CSS `transform`; bake offsets directly into `d` coordinates in the shared viewBox coordinate space. For glyphs with internal cutouts (O, P, R, A), compound the outer and inner subpaths with `fill-rule="evenodd"`.
+
+### Entry #007: Editorial Academic Redesign & Multi-Page Institutional Architecture
+- **Date**: 2026-10-07
+- **Category**: Editorial Academic Web Design System & Multi-Page Architecture
+- **Context**: Complete post-intro redesign of the NIOS Career Point Berhampur website, transforming it from a generic AI/SaaS-like layout into an authoritative, trustworthy Indian educational consultancy and academic guidance institution portal.
+
+#### The Problem / Pitfall
+1. **Generic SaaS & Card Bloat**: The original website suffered from generic AI templates—floating bubble cards, purple gradients, playful illustrations, and underspecified copy that eroded credibility for an established Indian academic consultancy operating since 2011.
+2. **Intro Lifecycle Decoupling**: The intro splash screen (`#intro-screen`, `splash.css`, `splash.js`) was engineered specifically for `index.php` / `index.html`. Internal subpages (`10th.php`, `plus-two.php`, `graduation.php`, `post-graduation.php`, `about.php`, `vision-mission.php`, `why-us.php`, `contact.php`) lacked `#intro-screen`. If `intro-active` remained attached to `<body>` or if `splash.js` executed without defensive element guards, subpages would lock user scrolling or crash coordinate calculation.
+3. **Mobile Navbar Space Contention**: On 390px–430px viewports, the brand logo, quick phone action, Enquire button, and hamburger toggle competed for limited horizontal space, causing buttons to clip or wrap outside the viewport.
+
+#### The Solution & Breakthrough
+1. **Editorial Academic Design System (70/20/10 Ratio)**:
+   - **Palette**: Deep Navy (`#071A33`), Heritage Red (`#B8202A`), Academic Gold (`#C7A45A`), Off-White Paper Canvas (`#F7F6F2`), Crisp Card White (`#FFFFFF`), Hairline Divider borders (`#E5E7EB`).
+   - **Typography**: Editorial serif `DM Serif Display` for authoritative headlines paired with geometric sans-serif `Inter` for functional data, curriculum tables, and trust metrics.
+   - **Zero Card Bloat**: Replaced bubble cards with numbered editorial program rows (`01` through `04`), split two-column narratives, 6-step guidance pathways, and structured admission criteria tables.
+2. **Defensive Multi-Page Lifecycle Guards**:
+   - In [assets/js/splash.js](file:///e:/SensorSpine/NIOS%20Career%20Point/assets/js/splash.js), added early guard: `if (!introScreen) { document.body.classList.remove('intro-active'); return; }`.
+   - In [includes/header.php](file:///e:/SensorSpine/NIOS%20Career%20Point/includes/header.php), set `intro-active` class only on the homepage (`index.php`).
+3. **Responsive Header Calibration**:
+   - On mobile screens (`max-width: 768px`), constrained `.header-logo-img` to `height: 28px; max-width: 135px;`, hid secondary phone text, and applied `flex-shrink: 0;` to `.header-actions` with tight `gap: 0.45rem;`, ensuring the logo, primary CTA button, and hamburger toggle align cleanly within 390px viewports without horizontal clipping.
+4. **Dual Production & Static Parity**:
+   - Synchronized all 9 core pages identically between production native PHP (`index.php`, `10th.php`, `plus-two.php`, `graduation.php`, `post-graduation.php`, `about.php`, `vision-mission.php`, `why-us.php`, `contact.php`) and standalone static HTML (`index.html`, `10th.html`, `plus-two.html`, `graduation.html`, `post-graduation.html`, `about.html`, `vision-mission.html`, `why-us.html`, `contact.html`).
+   - Grounded all content strictly in verified live institution data (Estd. 2011, 2,500+ guided learners, Gandhi Nagar 1st Lane Extn Berhampur, phones: `9398161800`, `9692758200`, `9827752949`, slogan: *"No Issues Of Studies"*).
+
+#### Key Takeaway & Rule
+> **Rule**: When designing educational institution portals, prioritize editorial typography, hairline dividers, factual credentials, and structured pathway rows over floating card grids. Ensure intro splash controllers decouple gracefully on subpages where the intro canvas is omitted.
+
+---
+
 ## 🛠️ Developer Checklist for Future Features
 
 Before submitting changes to the codebase, verify:
