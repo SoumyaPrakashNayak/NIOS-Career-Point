@@ -1,0 +1,65 @@
+<svg id="intro-brand-svg" class="intro-brand-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="goldSphereGrad" cx="35%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#FFF6B8"/>
+            <stop offset="35%" stop-color="#EFAD1E"/>
+            <stop offset="100%" stop-color="#B87204"/>
+        </radialGradient>
+        <filter id="brandDropGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#EFAD1E" flood-opacity="0.35"/>
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/>
+        </filter>
+    </defs>
+
+    <!-- MAIN BRAND VECTOR WRAPPER -->
+    <g id="brand-vector-group" class="brand-vector-group" filter="url(#brandDropGlow)">
+        
+        <!-- 1. NIOS UNIT (Emblem, N, O, S) -->
+        <g id="unit-nios" class="brand-unit unit-nios">
+            
+            <!-- CENTRAL EMBLEM (Pen Nib + Gold Ball) -->
+            <g id="elem-emblem" class="brand-elem elem-emblem">
+                <!-- Golden Ball (Circle on top) -->
+                <circle id="elem-gold-ball" class="emblem-part elem-ball" cx="68.5" cy="12.5" r="6.2" fill="url(#goldSphereGrad)"/>
+                <!-- Pen Nib Collar -->
+                <path id="elem-nib-collar" class="emblem-part elem-collar" d="M 61 22 L 62 23 L 62 24 L 61 25 L 62 26 L 75 26 L 76 25 L 75 24 L 75 23 L 76 22 L 75 21 L 62 21 Z" fill="#ED1D25"/>
+                <!-- Pen Nib Body with Breather Hole and Slit -->
+                <path id="elem-nib-body" class="emblem-part elem-nib" d="M 63 28 L 62 31 L 59 34 L 59 35 L 55 39 L 55 40 L 59 44 L 59 45 L 61 47 L 62 50 L 64 52 L 64 53 L 65 54 L 65 56 L 66 57 L 67 60 L 67 41 L 65 39 L 68 36 L 69 36 L 71 38 L 71 40 L 70 41 L 70 60 L 70 59 L 72 56 L 72 54 L 73 53 L 73 52 L 75 50 L 75 49 L 76 48 L 76 47 L 78 45 L 78 44 L 82 40 L 82 39 L 78 35 L 78 34 L 75 31 L 74 28 Z" fill="#ED1D25"/>
+            </g>
+
+            <!-- Letter N -->
+            <g id="elem-letter-n" class="brand-elem elem-letter letter-n">
+                <path d="M 10 21 L 10 59 L 11 60 L 11 62 L 12 63 L 12 65 L 13 65 L 15 63 L 16 63 L 17 62 L 18 62 L 19 61 L 22 60 L 22 58 L 21 57 L 21 38 L 22 37 L 23 37 L 34 48 L 34 59 L 45 59 L 45 21 L 34 21 L 34 31 L 33 32 L 22 21 Z" fill="#2B2A87"/>
+            </g>
+
+            <!-- Letter O -->
+            <g id="elem-letter-o" class="brand-elem elem-letter letter-o">
+                <path d="M 102 21 L 101 22 L 100 22 L 99 23 L 96 24 L 90 30 L 90 31 L 89 32 L 89 35 L 88 36 L 88 40 L 89 41 L 89 45 L 90 46 L 90 47 L 91 48 L 92 51 L 98 57 L 99 57 L 101 59 L 103 59 L 104 60 L 112 60 L 113 59 L 115 59 L 117 57 L 118 57 L 124 51 L 124 50 L 127 45 L 127 42 L 128 41 L 128 32 L 127 31 L 127 30 L 121 24 L 120 24 L 115 21 Z M 107 29 L 110 29 L 111 30 L 112 30 L 116 34 L 116 44 L 115 45 L 114 48 L 111 51 L 106 51 L 102 47 L 102 46 L 101 45 L 101 43 L 100 42 L 100 35 L 101 34 L 101 33 L 103 31 L 104 31 Z" fill="#2B2A87" fill-rule="evenodd"/>
+            </g>
+
+            <!-- Letter S -->
+            <g id="elem-letter-s" class="brand-elem elem-letter letter-s">
+                <path d="M 142 21 L 141 22 L 139 22 L 138 23 L 137 23 L 134 26 L 134 27 L 133 28 L 133 34 L 134 35 L 134 36 L 146 48 L 146 50 L 145 51 L 132 51 L 132 53 L 133 54 L 133 57 L 135 60 L 151 60 L 152 59 L 154 59 L 156 57 L 157 57 L 158 56 L 158 55 L 160 52 L 160 49 L 159 48 L 159 47 L 153 41 L 153 40 L 146 33 L 146 31 L 147 30 L 159 30 L 159 28 L 158 27 L 158 24 L 157 23 L 157 21 Z" fill="#2B2A87"/>
+            </g>
+        </g>
+
+        <!-- 2. CAREER UNIT -->
+        <g id="unit-career" class="brand-unit unit-career">
+            <path id="letter-c"  class="career-letter let-c"  d="M 183 20 L 182 21 L 181 21 L 179 23 L 179 24 L 177 27 L 177 30 L 176 31 L 176 41 L 177 42 L 177 45 L 178 46 L 178 48 L 179 49 L 179 50 L 180 51 L 181 54 L 186 58 L 189 58 L 189 54 L 190 53 L 190 50 L 187 49 L 184 46 L 184 45 L 182 42 L 182 40 L 181 39 L 181 34 L 182 33 L 182 31 L 184 29 L 190 29 L 190 28 L 189 27 L 189 22 L 188 21 L 188 20 Z"  fill="#ED1D25"/>
+            <path id="letter-a"  class="career-letter let-a"  d="M 209 20 L 204 20 L 203 21 L 201 21 L 197 25 L 197 26 L 194 31 L 194 33 L 193 34 L 193 38 L 192 39 L 192 48 L 193 49 L 193 55 L 194 56 L 194 59 L 195 60 L 195 62 L 196 63 L 197 62 L 197 61 L 200 58 L 199 57 L 199 55 L 198 54 L 198 49 L 197 48 L 197 47 L 198 46 L 203 46 L 204 47 L 204 58 L 209 58 L 209 33 L 205 33 L 204 34 L 204 37 L 203 38 L 199 38 L 198 37 L 198 35 L 199 34 L 199 33 L 203 29 L 210 29 L 210 24 L 209 23 Z"  fill="#ED1D25"/>
+            <path id="letter-r1" class="career-letter let-r1" d="M 215 20 L 214 21 L 214 23 L 213 24 L 213 29 L 223 29 L 224 30 L 224 34 L 223 35 L 223 36 L 221 38 L 221 39 L 220 40 L 219 40 L 218 39 L 218 33 L 214 33 L 214 58 L 218 58 L 218 43 L 219 42 L 221 44 L 221 47 L 222 48 L 222 50 L 224 53 L 224 55 L 225 56 L 225 58 L 227 61 L 227 63 L 228 63 L 232 59 L 232 58 L 231 57 L 231 56 L 228 51 L 228 49 L 226 46 L 226 42 L 228 40 L 228 39 L 229 38 L 229 36 L 230 35 L 230 26 L 229 25 L 229 23 L 227 21 L 226 21 L 225 20 Z" fill="#ED1D25"/>
+            <path id="letter-e1" class="career-letter let-e1" d="M 235 20 L 235 58 L 248 58 L 248 57 L 249 56 L 249 50 L 241 50 L 240 49 L 240 44 L 241 43 L 247 43 L 247 38 L 248 37 L 248 35 L 241 35 L 240 34 L 240 30 L 241 29 L 249 29 L 249 27 L 248 26 L 248 21 L 247 20 Z" fill="#ED1D25"/>
+            <path id="letter-e2" class="career-letter let-e2" d="M 253 20 L 253 58 L 266 58 L 266 55 L 267 54 L 267 50 L 259 50 L 257 48 L 258 47 L 258 46 L 257 45 L 259 43 L 264 43 L 265 42 L 265 37 L 266 36 L 266 35 L 259 35 L 257 33 L 258 32 L 257 31 L 259 29 L 267 29 L 267 28 L 266 27 L 266 23 L 265 22 L 265 20 Z" fill="#ED1D25"/>
+            <path id="letter-r2" class="career-letter let-r2" d="M 271 20 L 271 22 L 270 23 L 270 27 L 269 28 L 269 29 L 280 29 L 281 30 L 281 34 L 280 35 L 280 36 L 276 40 L 275 39 L 275 33 L 271 33 L 270 34 L 270 58 L 275 58 L 275 43 L 276 42 L 278 45 L 278 47 L 279 48 L 279 50 L 280 51 L 280 53 L 281 54 L 281 56 L 282 57 L 282 59 L 283 60 L 284 63 L 285 63 L 288 60 L 288 57 L 286 54 L 286 52 L 284 49 L 284 47 L 283 46 L 282 43 L 284 41 L 284 40 L 286 37 L 286 35 L 287 34 L 287 27 L 286 26 L 286 24 L 285 23 L 285 22 L 282 20 Z" fill="#ED1D25"/>
+        </g>
+
+        <!-- 3. POINT UNIT -->
+        <g id="unit-point" class="brand-unit unit-point">
+            <path id="letter-p"  class="point-letter let-p"  d="M 312 20 L 303 20 L 302 21 L 302 24 L 301 25 L 301 29 L 311 29 L 312 30 L 312 35 L 310 37 L 310 38 L 309 39 L 308 39 L 307 38 L 307 34 L 306 33 L 302 33 L 302 58 L 307 58 L 307 52 L 312 48 L 312 47 L 315 44 L 315 43 L 316 42 L 316 40 L 317 39 L 317 36 L 318 35 L 318 28 L 317 27 L 317 25 L 316 24 L 316 23 L 314 21 L 313 21 Z"  fill="#ED1D25"/>
+            <path id="letter-o2" class="point-letter let-o2" d="M 327 20 L 323 24 L 323 25 L 321 28 L 321 30 L 320 31 L 320 45 L 321 46 L 321 49 L 322 50 L 322 52 L 323 53 L 323 54 L 325 56 L 325 57 L 326 57 L 328 59 L 330 59 L 331 58 L 332 58 L 334 56 L 334 55 L 336 52 L 336 50 L 337 49 L 337 47 L 338 46 L 338 39 L 339 38 L 339 33 L 338 32 L 338 28 L 337 27 L 336 24 L 333 21 L 332 21 L 331 20 Z M 328 29 L 331 29 L 333 32 L 333 45 L 332 46 L 332 48 L 330 50 L 328 50 L 327 49 L 327 48 L 326 47 L 326 44 L 325 43 L 325 33 L 326 32 L 326 31 Z" fill="#ED1D25" fill-rule="evenodd"/>
+            <path id="letter-i2" class="point-letter let-i2" d="M 342 21 L 342 58 L 347 58 L 347 21 Z" fill="#ED1D25"/>
+            <path id="letter-n2" class="point-letter let-n2" d="M 368 21 L 363 21 L 363 30 L 362 31 L 360 29 L 360 28 L 359 27 L 359 26 L 356 21 L 351 21 L 351 60 L 352 61 L 352 64 L 355 61 L 355 60 L 356 59 L 356 38 L 357 37 L 358 38 L 358 39 L 359 40 L 359 41 L 360 42 L 360 43 L 363 48 L 363 58 L 368 58 Z" fill="#ED1D25"/>
+            <path id="letter-t"  class="point-letter let-t"  d="M 373 20 L 372 21 L 372 24 L 371 25 L 371 29 L 376 29 L 377 30 L 377 58 L 382 58 L 382 30 L 383 29 L 388 29 L 388 27 L 387 26 L 387 21 L 386 20 Z"  fill="#ED1D25"/>
+        </g>
+    </g>
+</svg>
