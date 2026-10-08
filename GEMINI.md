@@ -11,7 +11,8 @@
 
 ## 2. Technology Stack & Constraints
 - **Core Frontend**: Strict HTML5, CSS3, SVG, and Vanilla JavaScript.
-- **Strictly Prohibited**: Do NOT introduce heavy external frontend JS frameworks or animation runtimes (e.g., React, Vue, GSAP, Anime.js, Framer Motion, jQuery, Bootstrap, Tailwind).
+- **Animation & Motion**: Client-approved lightweight motion engine via CDN: GSAP 3.12, ScrollTrigger, and Lenis smooth scrolling.
+- **Strictly Prohibited**: Do NOT introduce heavy frontend application frameworks or CSS utility suites (e.g., React, Vue, jQuery, Bootstrap, Tailwind).
 - **Backend**: Native PHP for Hostinger deployment.
 - **Parity Rule**: Keep `index.php` and standalone static `index.html` synchronized when updating structure or markup.
 

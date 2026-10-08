@@ -252,6 +252,93 @@ To ensure this journal remains high-leverage and actionable:
 
 ---
 
+### Entry #009: Figma Visual System Adoption, Blue Accent Pivot & Locked Intro Decoupling
+- **Date**: 2026-10-08
+- **Category**: Visual Design System, Motion Orchestration & Architecture
+- **Context**: Executing Deliverable 1 of the client-approved Figma design rework (Floating contained navbar + Editorial Hero + Locked Intro handoff).
+
+#### The Problem / Pitfall
+- **Locked Intro vs. Redesign Handoff**: The client locked the existing 5.4s cinematic SVG logo intro (`#intro-screen`). The homepage hero must never flash or appear prematurely, yet must seamlessly reveal itself when the logo completes its flight into `#header-brand-logo`.
+- **Generic Coaching Aesthetic**: Early drafts used harsh institutional reds, full pills, and rigid card grids. The Figma visual reference demanded an agency-level editorial education aesthetic with generous whitespace, soft neutral canvas (`#F7F8FA`), and restrained shape language.
+
+#### The Solution & Implementation
+1. **Curated Color & Typography Tokens**:
+   - Canvas: `#F7F8FA` neutral off-white.
+   - Accent Blue: `#3158D8` primary dominant accent; `#18255A` deep navy; `#EAF0FF` soft tint.
+   - Typography Contrast: Display serif (`Instrument Serif`) for emotional emphasis paired with high-clarity grotesque sans (`Manrope`) for UI, labels, and body.
+2. **Floating Contained Navigation**:
+   - Replaced full-width header with floating rounded container (20px radius, 16px blur, subtle hairline border) featuring the exact target logo ID `#header-brand-logo` for coordinate measurement by `splash.js`, clean links, and a compact `Enquire Now →` button (12px radius).
+3. **Master Homepage Hero Container**:
+   - Enclosed in a 32px rounded white frame with subtle geometric concentric rings SVG (`#3158D8` at 4-7% opacity).
+   - Left side: Soft blue eyebrow pill, large editorial headline with `<em class="hero-serif-word">Your Next</em>` serif contrast, lead description, dual CTAs with arrow micro-interactions, and verified 3-point trust list.
+   - Right side: Layered photographic composition pairing high-res authentic Indian student portrait with overlapping 1-on-1 counselling desk card and floating micro-badges (`SINCE 2011 • BERHAMPUR` and `ACADEMIC SUPPORT`).
+4. **Decoupled GSAP Motion Controller**:
+   - In `assets/js/main.js`, hero entrance elements start hidden (`opacity: 0`) if `body.intro-active` is present.
+   - The GSAP timeline executes upon receiving `window.dispatchEvent(new CustomEvent('nios:introComplete'))` from `splash.js` (or immediately if intro is skipped or on subpages).
+   - Staggered sequence: Navigation settles -> Eyebrow pill reveals -> Headline reveals line-by-line -> Body copy -> CTAs & trust items -> Main photo clips in -> Overlapping desk photo enters -> Floating badges slide into position.
+   - Integrated Lenis smooth scrolling with GSAP ticker sync.
+
+#### Key Takeaway & Rule
+> **Rule**: When an introductory brand animation is locked, decouple subsequent page motion using native CustomEvents (`nios:introComplete`). Apply typography contrast (editorial serif + geometric sans) and layered authentic photography inside large rounded containers (24–36px) to immediately elevate the design from "coaching template" to "premium digital education brand."
+
+---
+
+### Entry #010: High-Fidelity 5-Section Reference UI Recreation & Lenis Smooth Scrolling
+- **Date**: 2026-10-08
+- **Category**: UI/UX / Layout / Motion / Parity
+- **Context**: User provided 5 specific reference visual designs to copy exactly across the website while keeping the existing SVG splash intro untouched.
+
+#### The Problem / Pitfall
+- The user provided five distinct section reference images (Floating pill navbar + 2x2 multi-shape hero student collage, 4 rounded program cards with blue circular outline icons, "About Our Institute" with lawn building photo + 3 square thumbnails + checklist, "Our Journey" dark banner with concentric wave rings and glass stat cards, and "Our Facilities" 2x4 card grid).
+- The existing introductory splash animation (`#intro-screen`) was strictly locked and could not be altered.
+- Large unified file replacement attempts on complex templates with mixed PHP/HTML tags risk desynchronizing the header and footer inclusions.
+
+#### The Solution & Breakthrough
+1. **Precision UI Reproduction**:
+   - **Hero (Reference 1)**: Floating pill navbar with royal blue `Contact Us` button; eyebrow pill `🎓 A Better Place to Learn`; bold headline `Education for a Bright Future.` with royal blue accent; 2x2 student photo grid with custom shaped cards (Circle, Mint squircle, Yellow squircle, Purple squircle), concentric background rings, 3D graduation cap, and doodle sparks.
+   - **Our Program (Reference 2)**: 4 clean rounded cards with blue outline circle icons (Primary School, High School, Digital Learning, Co-Curricular Activities) with sunburst ray geometry.
+   - **About Our Institute (Reference 3)**: Large rounded card container with 16:11 main building frame + 3 square thumbnails underneath; spark doodle title, description, and 5 checkmarked items with blue circular check icons.
+   - **Our Journey (Reference 4)**: Dark container (`#0E1015`) with concentric wave rings and 4 glass stat cards (`1500+`, `50+`, `800+`, `10+`).
+   - **Our Facilities (Reference 5)**: 8-card grid (2 rows of 4) featuring 4:3 rounded images, bold titles, and descriptions.
+2. **Smooth Scrolling Engine**:
+   - Lenis smooth scrolling (v1.1.18) initialized and coupled with GSAP ticker (`lenis.raf(time * 1000)`).
+3. **Strict Parity**:
+   - Applied identical markup and script hooks to both `index.php` and standalone static `index.html`.
+
+#### Key Takeaway & Rule
+> **Rule**: When recreating user-specified reference layouts, decompose the visual language into modular CSS design tokens (radii, custom squircle borders, accent colors, concentric background SVGs). Ensure Lenis smooth scrolling syncs seamlessly with GSAP tickers and respects reduced-motion preferences.
+
+---
+
+### Entry #011: Diagnosing & Eliminating Smooth Scrolling Lag and Stutter
+- **Date**: 2026-10-08
+- **Category**: JS / CSS / Performance / Animation
+- **Context**: Scrolling lag and sluggishness reported after initial Lenis smooth scrolling integration.
+
+#### The Problem / Pitfall
+1. **CSS vs JS Smooth Scrolling Conflict**: `html { scroll-behavior: smooth; }` was defined in CSS while Lenis JS interpolation was active. Every single animation frame (~16ms), Lenis called `window.scrollTo()`, which triggered the browser's own CSS smooth scroll animation, immediately being interrupted and restarted by the next frame, causing severe frame drops, stutter, and jitter.
+2. **Excessive Inertia Duration**: `duration: 1.15s` in Lenis caused mouse wheel inputs to take over a full second to decelerate, causing heavy perceived input lag and unresponsiveness.
+3. **Layout Reflow on Scroll Threshold**: The sticky navigation bar modified `padding` upon crossing the `window.scrollY > 24px` threshold, causing layout reflows across the entire header during active scrolling.
+4. **Ticker Jitter & Intro Lifecycle**: Using `gsap.ticker` with `lagSmoothing(0)` bypassed GSAP delta compensation, while Lenis was running during `#intro-screen` with `overflow: hidden !important` on `body`.
+
+#### The Solution & Breakthrough
+1. **Lenis CSS Isolation**:
+   - Replaced `html { scroll-behavior: smooth; }` with the official Lenis reset: `.lenis.lenis-smooth { scroll-behavior: auto !important; }` and `html:not(.lenis) { scroll-behavior: smooth; }`.
+2. **Snappy & Natural Tuning**:
+   - Calibrated Lenis duration to `0.8s` with `wheelMultiplier: 1.0` and `touchMultiplier: 1.5`, delivering instant response to wheel flicks without floaty drag.
+3. **Direct Hardware VSync RAF Loop**:
+   - Migrated to native `requestAnimationFrame((time) => lenis.raf(time))` for hardware VSync timing on 60Hz/120Hz/144Hz monitors.
+4. **Lifecycle Coordination with Splash Intro**:
+   - Explicitly paused Lenis (`lenis.stop()`) while `#intro-screen` is active, resuming and calling `lenis.resize()` on `nios:introComplete`.
+5. **GPU Layer Promotion & Zero-Reflow Header**:
+   - Fixed header padding permanently, animating only `box-shadow` and `background`.
+   - Promoted all decorative background SVGs (`.hero-concentric-rings`, `.programs-sunburst-bg`, `.about-dot-matrix`, `.journey-wave-bg`, `.cta-rings-bg`) to GPU composite layers (`transform: translateZ(0)`).
+
+#### Key Takeaway & Rule
+> **Rule**: NEVER allow `html { scroll-behavior: smooth; }` in CSS when using Lenis or any virtual scroller — it creates a 60fps interruption loop. Keep Lenis duration around `0.8s` for instantaneous human responsiveness, use native `requestAnimationFrame`, and isolate large background SVGs into GPU composite layers.
+
+---
+
 ## 🛠️ Developer Checklist for Future Features
 
 Before submitting changes to the codebase, verify:

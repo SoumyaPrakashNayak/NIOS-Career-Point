@@ -89,584 +89,520 @@
     =============================================================
 -->
 <main id="website">
-    <!-- 1. HERO SECTION (EDITORIAL ACADEMIC SPLIT) -->
-    <section class="hero-editorial" id="home">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <span class="eyebrow">Academic Guidance &amp; Consultancy • Estd. 2011 in Berhampur</span>
-                <h1 class="hero-headline">
-                    Your Next Chapter Starts Here.
-                </h1>
-                <p class="hero-lead">
-                    Personalized educational counselling and certified admission pathways for Direct 10th (Secondary), +2 Senior Secondary (Arts, Science, Commerce), and UGC-recognized Degree programs in Berhampur, Odisha.
-                </p>
-                <div class="hero-ctas">
-                    <a href="#programs" class="btn btn-primary">Explore Academic Pathways ↓</a>
-                    <a href="contact.php" class="btn btn-secondary">Talk to a Counsellor</a>
-                </div>
-                <div class="hero-meta-points">
-                    <div class="hero-meta-item">
-                        <span>✓</span>
-                        <span><strong>Government Recognized Boards &amp; UGC Universities</strong> — Legally valid for higher education and government jobs.</span>
-                    </div>
-                    <div class="hero-meta-item">
-                        <span>✓</span>
-                        <span><strong>Specialized Second-Chance Pacing</strong> — Dedicated mentoring for failed and school-dropout students.</span>
-                    </div>
-                    <div class="hero-meta-item">
-                        <span>✓</span>
-                        <span><strong>Complete End-to-End Support</strong> — Admission, TMA assignments, practicals, hall tickets to final marksheet.</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Authentic Institutional Visual Container -->
-            <div class="hero-media">
-                <div class="hero-frame">
-                    <img 
-                        src="assets/images/nios-building-centre.jpg" 
-                        alt="NIOS Career Point Berhampur Counselling Centre" 
-                        class="hero-image"
-                        width="700"
-                        height="850"
-                        loading="eager"
-                    >
-                    <div class="hero-caption">
-                        <span><strong>NIOS Career Point</strong></span>
-                        <span>Estd. 2011 • Gandhi Nagar, Berhampur</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2. TRUST / CREDIBILITY STRIP -->
-    <section class="trust-strip" aria-label="Institutional Credibility Highlights">
-        <div class="container trust-strip-flex">
-            <div class="trust-item">
-                <span class="trust-label">Established</span>
-                <span class="trust-value">2011</span>
-            </div>
-            <div class="trust-divider"></div>
-            <div class="trust-item">
-                <span class="trust-label">Students Guided</span>
-                <span class="trust-value">2,500+</span>
-            </div>
-            <div class="trust-divider"></div>
-            <div class="trust-item">
-                <span class="trust-label">Academic Offerings</span>
-                <span class="trust-value">10th • +2 • UG • PG</span>
-            </div>
-            <div class="trust-divider"></div>
-            <div class="trust-item">
-                <span class="trust-label">Official Motto</span>
-                <span class="trust-value">"No Issues Of Studies"</span>
-            </div>
-            <div class="trust-divider"></div>
-            <div class="trust-item">
-                <span class="trust-label">Headquarters</span>
-                <span class="trust-value">Berhampur, Odisha</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- 2.5. EMOTIONAL STATEMENT SECTION (SCROLL STORY MOMENT) -->
-    <section class="emotional-statement-section" id="statement">
-        <div class="container container-narrow">
-            <span class="eyebrow eyebrow-gold">A Second Chance in Education</span>
-            <blockquote class="emotional-quote">
-                "Education doesn't always follow a straight line. <em>That's okay.</em>"
-            </blockquote>
-            <p class="emotional-narrative">
-                Whether you faced an unexpected setback in matriculation, stepped away from studies years ago, or are balancing full-time work with family commitments—an academic pause does not define your future. In Berhampur, NIOS Career Point provides clear, accredited, and deeply supportive pathways to complete your qualifications with dignity.
-            </p>
-        </div>
-    </section>
-
-    <!-- 3. COURSES SECTION (EDITORIAL NUMBERED LIST) -->
-    <section class="courses-editorial-section section-spacing" id="programs">
+    <!-- 1. HERO SECTION (REFERENCE IMAGE 1) -->
+    <section class="hero-section" id="hero">
         <div class="container">
-            <div class="section-header-editorial">
-                <div class="section-header-title">
-                    <span class="eyebrow">Academic Programs</span>
-                    <h2>Choose Your Next Path.</h2>
-                    <p>
-                        Whether you need a second chance after an exam setback or are looking to advance your credentials while working, our accredited programs ensure recognized qualifications.
+            <div class="hero-grid">
+                <!-- Left Narrative Column -->
+                <div class="hero-narrative">
+                    <div class="hero-badge">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                        <span>A Better Place to Learn</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Education <span class="hero-title-light">for</span><br>
+                        a Bright <span class="highlight-blue">Future.</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        A modern learning environment where education meets innovation, inspiring every student to succeed.
                     </p>
-                </div>
-                <div>
-                    <a href="programs.php" class="btn btn-secondary">Browse All Programs Directory →</a>
-                </div>
-            </div>
 
-            <div class="course-editorial-list">
-                <!-- Program 01: Direct 10th -->
-                <article class="course-row" onclick="window.location.href='10th.php'">
-                    <div class="course-number">01</div>
-                    <div class="course-title-group">
-                        <span class="course-stream-pill">Secondary Education</span>
-                        <h3><a href="10th.php">Direct 10th (Secondary)</a></h3>
+                    <div class="hero-actions">
+                        <a href="contact.php" class="btn btn-hero">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <span>Apply Now</span>
+                        </a>
                     </div>
-                    <div>
-                        <p class="course-desc">
-                            Direct matriculation examination pathway for failed or school-dropout students through the National Institute of Open Schooling. Complete flexibility in subject choices, official study materials, and Tutor Marked Assignment (TMA) preparation.
-                        </p>
-                    </div>
-                    <div class="course-action">
-                        <a href="10th.php" class="btn btn-secondary btn-sm">Explore 10th →</a>
-                    </div>
-                </article>
-
-                <!-- Program 02: +2 Senior Secondary -->
-                <article class="course-row" onclick="window.location.href='plus-two.php'">
-                    <div class="course-number">02</div>
-                    <div class="course-title-group">
-                        <span class="course-stream-pill">Arts • Science • Commerce</span>
-                        <h3><a href="plus-two.php">+2 Senior Secondary</a></h3>
-                    </div>
-                    <div>
-                        <p class="course-desc">
-                            Recognized Class 12 certification for failed or discontinued students. Specialized guidance across Arts, Science, and Commerce streams with practical lab assistance. Fully valid for NEET, JEE, university degree admissions, and all government jobs.
-                        </p>
-                    </div>
-                    <div class="course-action">
-                        <a href="plus-two.php" class="btn btn-secondary btn-sm">Explore +2 →</a>
-                    </div>
-                </article>
-
-                <!-- Program 03: Graduation Programs -->
-                <article class="course-row" onclick="window.location.href='graduation.php'">
-                    <div class="course-number">03</div>
-                    <div class="course-title-group">
-                        <span class="course-stream-pill">B.A • B.Com • B.Sc • B.C.A • B.B.A</span>
-                        <h3><a href="graduation.php">Graduation Programs (UG)</a></h3>
-                    </div>
-                    <div>
-                        <p class="course-desc">
-                            Undergraduate degree pathways through UGC-recognized universities. Ideal for working professionals, dropouts, and candidates desiring a flexible schedule to attain a genuine bachelor's degree without compromising daily commitments.
-                        </p>
-                    </div>
-                    <div class="course-action">
-                        <a href="graduation.php" class="btn btn-secondary btn-sm">Explore Degrees →</a>
-                    </div>
-                </article>
-
-                <!-- Program 04: Post Graduation Programs -->
-                <article class="course-row" onclick="window.location.href='post-graduation.php'">
-                    <div class="course-number">04</div>
-                    <div class="course-title-group">
-                        <span class="course-stream-pill">M.A • M.Com • M.Sc • M.B.A • M.C.A</span>
-                        <h3><a href="post-graduation.php">Post Graduation Programs (PG)</a></h3>
-                    </div>
-                    <div>
-                        <p class="course-desc">
-                            Accredited master's degree admissions for graduates aiming to qualify for promotional examinations, college lectureship preparation, or managerial career advancement. Flexible distance and blended learning modes supported.
-                        </p>
-                    </div>
-                    <div class="course-action">
-                        <a href="post-graduation.php" class="btn btn-secondary btn-sm">Explore PG →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3.5. WHO WE HELP (AUDIENCE SEGMENT MATRIX) -->
-    <section class="who-we-help-section" id="who-we-help">
-        <div class="container">
-            <div class="section-header-editorial">
-                <div class="section-header-title">
-                    <span class="eyebrow">Who We Help</span>
-                    <h2>Built for Every Stage of the Learning Journey</h2>
-                    <p>
-                        We provide supportive, non-judgmental educational guidance tailored to individuals facing unique life circumstances.
-                    </p>
-                </div>
-                <div>
-                    <a href="contact.php" class="btn btn-secondary">Discuss Your Academic Situation →</a>
-                </div>
-            </div>
-
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <div>
-                        <span class="audience-tag">Second Chance</span>
-                        <h3 class="audience-title">Failed &amp; Dropout Students</h3>
-                        <p class="audience-desc">
-                            Overcome Class 10 or 12 board exam setbacks with flexible NIOS stream options and Transfer of Credit (TOC) to save your academic years.
-                        </p>
-                    </div>
-                    <a href="10th.php" class="audience-link">Explore 10th &amp; +2 <span>→</span></a>
                 </div>
 
-                <div class="audience-card">
-                    <div>
-                        <span class="audience-tag">Restart Studies</span>
-                        <h3 class="audience-title">Long Gap Learners</h3>
-                        <p class="audience-desc">
-                            Re-enter education after years away from school or college without embarrassment or confusing administrative barriers.
-                        </p>
-                    </div>
-                    <a href="about.php" class="audience-link">Our Guidance Model <span>→</span></a>
-                </div>
+                <!-- Right Visual Collage Column (4 Student Cards + Decorations) -->
+                <div class="hero-visual">
+                    <div class="hero-collage-wrapper">
+                        <!-- Top-Right Concentric Beige/Gold Rings -->
+                        <svg class="hero-concentric-rings" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="210" cy="90" r="130" stroke="#F6DCA6" stroke-width="2" stroke-opacity="0.55"/>
+                            <circle cx="210" cy="90" r="102" stroke="#F6DCA6" stroke-width="2" stroke-opacity="0.65"/>
+                            <circle cx="210" cy="90" r="74" stroke="#F6DCA6" stroke-width="2" stroke-opacity="0.75"/>
+                            <circle cx="210" cy="90" r="46" stroke="#F6DCA6" stroke-width="2" stroke-opacity="0.85"/>
+                        </svg>
 
-                <div class="audience-card">
-                    <div>
-                        <span class="audience-tag">Career Growth</span>
-                        <h3 class="audience-title">Working Professionals</h3>
-                        <p class="audience-desc">
-                            Earn recognized Bachelor's (B.A, B.Com, B.Sc) or Master's degrees through accredited distance learning while maintaining your job.
-                        </p>
-                    </div>
-                    <a href="graduation.php" class="audience-link">Degree Options <span>→</span></a>
-                </div>
+                        <!-- Floating 3D Graduation Cap -->
+                        <div class="floating-element float-cap" aria-hidden="true">🎓</div>
 
-                <div class="audience-card">
-                    <div>
-                        <span class="audience-tag">Future Ambition</span>
-                        <h3 class="audience-title">Higher Study Aspirants</h3>
-                        <p class="audience-desc">
-                            Attain valid board and university certificates recognized across India for NEET, JEE, UPSC, defence, and state government examinations.
-                        </p>
+                        <!-- Floating Orbs -->
+                        <div class="floating-element float-orb-blue" aria-hidden="true"></div>
+                        <div class="floating-element float-orb-amber" aria-hidden="true"></div>
+
+                        <!-- Floating Doodle Cloud (Yellow) -->
+                        <svg class="floating-element float-doodle-cloud" viewBox="0 0 70 50" fill="none" stroke="#F6B828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 35 C10 35 6 30 6 24 C6 18 11 14 17 14 C19 8 27 4 35 5 C43 6 49 12 50 18 C55 18 61 22 61 28 C61 34 55 38 49 38 Z" stroke-dasharray="3 3"/>
+                        </svg>
+
+                        <!-- Floating Doodle Sparks (Blue) -->
+                        <svg class="floating-element float-doodle-sparks" viewBox="0 0 45 45" fill="none" stroke="#3158D8" stroke-width="3" stroke-linecap="round" aria-hidden="true">
+                            <line x1="8" y1="24" x2="22" y2="28" />
+                            <line x1="16" y1="36" x2="26" y2="18" />
+                            <line x1="30" y1="32" x2="28" y2="42" />
+                        </svg>
+
+                        <!-- 2x2 Student Photo Cards Grid -->
+                        <div class="hero-cards-grid">
+                            <!-- Card 1: Circle (Top-Left) -->
+                            <div class="hero-photo-card card-circle">
+                                <img src="assets/images/hero-student-1.jpg" alt="Student with backpack smiling" width="240" height="240" loading="eager">
+                            </div>
+
+                            <!-- Card 2: Mint Squircle (Top-Right) -->
+                            <div class="hero-photo-card card-mint">
+                                <img src="assets/images/hero-student-2.jpg" alt="Student smiling with book on head" width="240" height="240" loading="eager">
+                            </div>
+
+                            <!-- Card 3: Yellow Squircle (Bottom-Left) -->
+                            <div class="hero-photo-card card-yellow">
+                                <img src="assets/images/hero-student-3.jpg" alt="Young student with stack of books" width="240" height="240" loading="eager">
+                            </div>
+
+                            <!-- Card 4: Purple Squircle (Bottom-Right) -->
+                            <div class="hero-photo-card card-purple">
+                                <img src="assets/images/hero-student-4.jpg" alt="Student with notebook expressing excitement" width="240" height="240" loading="eager">
+                            </div>
+                        </div>
                     </div>
-                    <a href="why-us.php" class="audience-link">Why Choose Us <span>→</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. ABOUT SECTION (INSTITUTIONAL EDITORIAL SPLIT) -->
-    <section class="about-editorial-section section-spacing" id="about">
-        <div class="container about-grid">
-            <div class="about-media-box">
-                <img 
-                    src="assets/images/nios-building-centre.jpg" 
-                    alt="NIOS Career Point Centre in Berhampur" 
-                    class="about-media-img"
-                    width="600"
-                    height="750"
-                    loading="lazy"
-                >
-                <div class="about-media-badge">
-                    <span>Guidance Legacy</span>
-                    <strong>Estd. 2011 Berhampur</strong>
-                </div>
-            </div>
+    <!-- 2. "OUR PROGRAM" SECTION (REFERENCE IMAGE 2) -->
+    <section class="programs-section" id="programs">
+        <!-- Sunburst Radiating Rays Background -->
+        <svg class="programs-sunburst-bg" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M500 500 L120 0 M500 500 L280 0 M500 500 L440 0 M500 500 L560 0 M500 500 L720 0 M500 500 L880 0 M500 500 L1000 180 M500 500 L1000 380 M500 500 L1000 620 M500 500 L1000 820 M500 500 L880 1000 M500 500 L720 1000 M500 500 L560 1000 M500 500 L440 1000 M500 500 L280 1000 M500 500 L120 1000 M500 500 L0 820 M500 500 L0 620 M500 500 L0 380 M500 500 L0 180" stroke="#3158D8" stroke-opacity="0.04" stroke-width="2.5"/>
+        </svg>
 
-            <div class="about-content">
-                <span class="eyebrow">About Our Institution</span>
-                <h2>A Sanctuary of Academic Second Chances in Southern Odisha</h2>
-                <p>
-                    NIOS Career Point is a premier student guidance and educational consultancy centre based in Berhampur, dedicated to helping students build an enduring academic and career foundation. Established in 2011, the institute has successfully guided more than 2,500 students in choosing the right educational path and achieving their academic ambitions.
-                </p>
-                <p>
-                    We believe that a past failure or missed year should never terminate a learner's potential. Our mission is to make accredited education accessible to every student — including school dropouts, discontinued college learners, working professionals, and homemakers who seek to enhance their qualifications with dignity.
-                </p>
-
-                <div class="about-pillars">
-                    <div class="pillar-item">
-                        <div class="pillar-num">01</div>
-                        <h4 class="pillar-title">Personalized Counselling</h4>
-                        <p class="pillar-text">
-                            We listen carefully to each learner's background, recommending streams and subject combinations that guarantee the smoothest exam clearance.
-                        </p>
-                    </div>
-                    <div class="pillar-item">
-                        <div class="pillar-num">02</div>
-                        <h4 class="pillar-title">End-to-End Handholding</h4>
-                        <p class="pillar-text">
-                            From document verification and board registration to TMA assignment uploads, practical coordination, and mark-sheet delivery.
-                        </p>
-                    </div>
-                </div>
-
-                <div style="margin-top: 2rem;">
-                    <a href="about.php" class="btn btn-primary">Read More About Our Journey →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. HOW WE HELP (6-STEP ACADEMIC PATHWAY) -->
-    <section class="process-section section-spacing" id="process">
         <div class="container">
             <div class="section-header-center">
-                <span class="eyebrow">Methodical Academic Guidance</span>
-                <h2>Our Six-Step Student Support Pathway</h2>
-                <p>
-                    A clear, transparent process ensuring peace of mind for parents and learners from registration to successful certification.
-                </p>
+                <h2>Our Program</h2>
+                <p>Discover our comprehensive educational programs designed to nurture every aspect of student development.</p>
             </div>
 
-            <div class="process-grid">
-                <div class="process-step">
-                    <div class="step-num">01</div>
-                    <h3 class="step-title">Initial Counselling</h3>
-                    <p class="step-desc">
-                        Comprehensive review of prior marks, dropped years, and career goals to identify the best accredited board or university program.
-                    </p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-num">02</div>
-                    <h3 class="step-title">Course &amp; Subject Selection</h3>
-                    <p class="step-desc">
-                        Choosing high-scoring, career-aligned subjects and streams across 10th, +2 (Arts, Science, Commerce), or University degrees.
-                    </p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-num">03</div>
-                    <h3 class="step-title">Official Admission</h3>
-                    <p class="step-desc">
-                        Flawless document verification and online portal registration with NIOS or UGC-recognized universities with valid enrollment IDs.
-                    </p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-num">04</div>
-                    <h3 class="step-title">Study &amp; TMA Support</h3>
-                    <p class="step-desc">
-                        Provision of syllabus textbooks, solved question papers, and end-to-end guidance for mandatory Tutor Marked Assignments.
-                    </p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-num">05</div>
-                    <h3 class="step-title">Examination Guidance</h3>
-                    <p class="step-desc">
-                        Hall ticket distribution, exam centre coordination, practical lab sessions, and time-management tips for the board exams.
-                    </p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-num">06</div>
-                    <h3 class="step-title">Certification &amp; Next Steps</h3>
-                    <p class="step-desc">
-                        Collection of official marksheets, migration certificates, and free counselling for upcoming college admissions and jobs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. WHY CHOOSE US (FACTUAL REPUTATION) -->
-    <section class="why-section section-spacing" id="why-us">
-        <div class="container why-split">
-            <div class="why-content">
-                <span class="eyebrow">Proven Credibility Since 2011</span>
-                <h2>Why Families in Southern Odisha Rely on Our Institute</h2>
-                <p>
-                    With over a decade of dedicated presence in Berhampur, we have established an unmatched reputation for transparency, ethical counselling, and genuine student welfare.
-                </p>
-                <p>
-                    We never make unrealistic promises; instead, we provide accredited, legally sound pathways with the personal encouragement needed to turn past academic hardships into triumphant success.
-                </p>
-                <div style="margin-top: 2rem;">
-                    <a href="why-us.php" class="btn btn-secondary">Learn Why Students Succeed Here →</a>
-                </div>
-            </div>
-
-            <div class="why-reasons-list">
-                <div class="why-reason-row">
-                    <div class="why-icon-box">01</div>
-                    <div class="why-reason-content">
-                        <h4>Established Since 2011 with Trusted Track Record</h4>
-                        <p>Over 14 continuous years serving students across Berhampur, Ganjam, Gajapati, and Southern Odisha.</p>
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div class="program-icon-circle">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 20V10a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v10"></path>
+                            <path d="M12 4v4"></path>
+                            <path d="m9 6 3-2 3 2"></path>
+                            <path d="M10 12h4"></path>
+                            <path d="M10 16h4"></path>
+                            <path d="M2 20h20"></path>
+                        </svg>
                     </div>
+                    <h3>Primary School</h3>
+                    <p>Building a strong foundation with a comprehensive curriculum for grades 1-5.</p>
                 </div>
 
-                <div class="why-reason-row">
-                    <div class="why-icon-box">02</div>
-                    <div class="why-reason-content">
-                        <h4>2,500+ Students Successfully Guided</h4>
-                        <p>Real learners who overcame board failures and dropouts, now enrolled in colleges or employed in government and private sectors.</p>
+                <!-- Program 2 -->
+                <div class="program-card">
+                    <div class="program-icon-circle">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 20h16"></path>
+                            <path d="M4 20V9l8-5 8 5v11"></path>
+                            <path d="M9 13h6"></path>
+                            <path d="M9 17h6"></path>
+                        </svg>
                     </div>
+                    <h3>High School</h3>
+                    <p>Preparing students for higher education with advanced courses and career guidance.</p>
                 </div>
 
-                <div class="why-reason-row">
-                    <div class="why-icon-box">03</div>
-                    <div class="why-reason-content">
-                        <h4>Full Support for Direct 10th &amp; +2 Admissions</h4>
-                        <p>Specialists in NIOS Stream-1, Stream-2, and Transfer of Credit (TOC) to carry over passed marks from state/CBSE boards.</p>
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div class="program-icon-circle">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></path>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
                     </div>
+                    <h3>Digital Learning</h3>
+                    <p>Innovative online programs to enhance learning through technology and digital resources.</p>
                 </div>
 
-                <div class="why-reason-row">
-                    <div class="why-icon-box">04</div>
-                    <div class="why-reason-content">
-                        <h4>UGC-Recognized Graduation &amp; Post-Graduation</h4>
-                        <p>Degrees accepted by universities nationwide for postgraduate admissions, civil services, banking, and professional examinations.</p>
+                <!-- Program 4 -->
+                <div class="program-card">
+                    <div class="program-icon-circle">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
                     </div>
-                </div>
-
-                <div class="why-reason-row">
-                    <div class="why-icon-box">05</div>
-                    <div class="why-reason-content">
-                        <h4>Support for Working Professionals &amp; Homemakers</h4>
-                        <p>Tailored schedules, weekend telephone assist, and simplified materials that honor your family and work responsibilities.</p>
-                    </div>
+                    <h3>Co-Curricular Activities</h3>
+                    <p>A wide range of sports, arts, and clubs to develop well-rounded personalities.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 7. OUR CENTRE (BERHAMPUR LOCATION & CONTACT) -->
-    <section class="centre-section section-spacing" id="centre">
-        <div class="container centre-grid">
-            <div class="centre-info-box">
-                <span class="eyebrow">Academic Guidance Centre</span>
-                <h2>Visit Our Berhampur Counselling Office</h2>
-                <p>
-                    Parents, guardians, and students are warmly welcomed to visit our counselling rooms for in-person consultation, document review, and career mapping.
-                </p>
+    <!-- 3. "ABOUT OUR INSTITUTE" SECTION (REFERENCE IMAGE 3) -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-card-container">
+                <!-- Dot matrix ornament (top-left) -->
+                <svg class="about-dot-matrix" viewBox="0 0 120 70" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="10" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="30" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="50" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="70" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="90" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="110" cy="10" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="10" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="30" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="50" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="70" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="90" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="110" cy="30" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="10" cy="50" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="30" cy="50" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="50" cy="50" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="70" cy="50" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="90" cy="50" r="2.5" fill="#C5D2E0"/>
+                    <circle cx="110" cy="50" r="2.5" fill="#C5D2E0"/>
+                </svg>
 
-                <div class="centre-detail-item">
-                    <div class="centre-detail-icon">📍</div>
-                    <div class="centre-detail-text">
-                        <h5>Centre Address</h5>
-                        <p>Gandhi Nagar 1st Lane Extension, Back Side of Sai Complex, Berhampur, Odisha - 760001</p>
+                <!-- Sunburst corner rays (bottom-right) -->
+                <svg class="about-sunburst-corner" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M300 300 L160 0 M300 300 L70 40 M300 300 L0 120 M300 300 L0 210 M300 300 L210 0" stroke="#3158D8" stroke-opacity="0.05" stroke-width="2.5"/>
+                </svg>
+
+                <div class="about-grid">
+                    <!-- Left Photo Collage -->
+                    <div class="about-collage">
+                        <div class="about-main-frame">
+                            <img src="assets/images/nios-building-centre.jpg" alt="Institute Campus Building" class="about-main-img" width="560" height="385" loading="lazy">
+                        </div>
+                        <div class="about-thumbs-row">
+                            <div class="about-thumb">
+                                <img src="assets/images/about-thumb-1.jpg" alt="Classroom study session" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="about-thumb">
+                                <img src="assets/images/about-thumb-2.jpg" alt="Dedicated learning materials" width="180" height="180" loading="lazy">
+                            </div>
+                            <div class="about-thumb">
+                                <img src="assets/images/about-thumb-3.jpg" alt="Academic guidance resources" width="180" height="180" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="centre-detail-item">
-                    <div class="centre-detail-icon">📞</div>
-                    <div class="centre-detail-text">
-                        <h5>Direct Helplines</h5>
-                        <p>
-                            <a href="tel:+919398161800"><strong>+91 93981 61800</strong></a> &nbsp;|&nbsp; 
-                            <a href="tel:+919692758200">+91 96927 58200</a> &nbsp;|&nbsp; 
-                            <a href="tel:+919827752949">+91 98277 52949</a>
+                    <!-- Right Narrative & Checklist -->
+                    <div class="about-content">
+                        <div class="about-title-wrap">
+                            <h2 class="about-title">About Our Institute</h2>
+                            <svg class="about-doodle-sparks" viewBox="0 0 40 40" fill="none" stroke="#3158D8" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                                <line x1="20" y1="6" x2="20" y2="17" />
+                                <line x1="7" y1="20" x2="18" y2="20" />
+                                <line x1="11" y1="11" x2="19" y2="19" />
+                            </svg>
+                        </div>
+
+                        <p class="about-lead">
+                            Since our founding in 1998, we've been dedicated to providing exceptional education that prepares students for the challenges of tomorrow. Our mission is to inspire a lifelong love of learning in a nurturing environment
                         </p>
+
+                        <div class="about-divider"></div>
+
+                        <ul class="about-checklist">
+                            <li>
+                                <div class="check-icon-circle">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Modern classroom facilities</span>
+                            </li>
+                            <li>
+                                <div class="check-icon-circle">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Experienced teachers</span>
+                            </li>
+                            <li>
+                                <div class="check-icon-circle">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Safe and supportive environment</span>
+                            </li>
+                            <li>
+                                <div class="check-icon-circle">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Personalized learning approach</span>
+                            </li>
+                            <li>
+                                <div class="check-icon-circle">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Comprehensive curriculum</span>
+                            </li>
+                        </ul>
+
+                        <a href="about.php" class="btn btn-primary">
+                            <span>Learn More</span>
+                            <span aria-hidden="true">→</span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="centre-detail-item">
-                    <div class="centre-detail-icon">⏰</div>
-                    <div class="centre-detail-text">
-                        <h5>Office Hours</h5>
-                        <p>Monday – Saturday: 9:00 AM – 7:30 PM (Sunday by appointment)</p>
-                    </div>
-                </div>
-
-                <div class="centre-detail-item">
-                    <div class="centre-detail-icon">🏛️</div>
-                    <div class="centre-detail-text">
-                        <h5>Institutional Philosophy</h5>
-                        <p><strong>"No Issues Of Studies"</strong> — Accessible education for every aspiring individual.</p>
-                    </div>
-                </div>
-
-                <div style="margin-top: 1.5rem;">
-                    <a href="contact.php" class="btn btn-primary">Schedule An In-Person Visit →</a>
-                </div>
-            </div>
-
-            <!-- Centre Location Visual / Context -->
-            <div class="centre-map-container">
-                <iframe 
-                    class="centre-map-frame"
-                    title="NIOS Career Point Berhampur Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15053.882414736173!2d84.79250000000001!3d19.317500000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d50046b955555%3A0x7d0a27329596c567!2sGandhi%20Nagar%2C%20Brahmapur%2C%20Odisha%20760001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
         </div>
     </section>
 
-    <!-- 8. FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
-    <section class="faq-section section-spacing" id="faq">
+    <!-- 4. "OUR JOURNEY" DARK BANNER (REFERENCE IMAGE 4) -->
+    <section class="journey-section" id="journey">
+        <div class="container">
+            <div class="journey-container">
+                <!-- Concentric Wave Rings Background -->
+                <svg class="journey-wave-bg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="500" cy="250" r="120" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="2"/>
+                    <circle cx="500" cy="250" r="200" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="2"/>
+                    <circle cx="500" cy="250" r="280" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="2"/>
+                    <circle cx="500" cy="250" r="360" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="2"/>
+                    <circle cx="500" cy="250" r="440" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="2"/>
+                    <circle cx="500" cy="250" r="520" stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="2"/>
+                </svg>
+
+                <div class="journey-content">
+                    <h2 class="journey-heading">
+                        Our <span class="text-dim">Journey</span> of Growth, <span class="text-dim">Excellence</span>, and<br>
+                        <span class="text-dim">Unmatched</span> Educational <span class="text-dim">Impact</span>
+                    </h2>
+
+                    <div class="journey-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">1500</div>
+                            <div class="stat-label">TOTAL STUDENT</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">50</div>
+                            <div class="stat-label">TOTAL TEACHER</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">800</div>
+                            <div class="stat-label">TOTAL PARENTS</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">YEARS OF INSTITUTE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. "OUR FACILITIES" SECTION (REFERENCE IMAGE 5) -->
+    <section class="facilities-section" id="facilities">
         <div class="container">
             <div class="section-header-center">
-                <span class="eyebrow">Questions &amp; Clarifications</span>
-                <h2>Frequently Asked Academic Inquiries</h2>
-                <p>
-                    Factual information regarding board accreditation, legal recognition, and our admission process.
-                </p>
+                <h2>Our Facilities</h2>
+                <p>We provide state-of-the-art facilities to ensure a comprehensive learning experience.</p>
             </div>
 
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Is a 10th or +2 certificate from NIOS recognized for college admissions and government jobs?</span>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Yes, absolutely. The National Institute of Open Schooling (NIOS) is an autonomous institution under the Ministry of Education, Government of India. Certificates issued by NIOS are legally recognized across India on par with CBSE, ICSE, and state boards (including BSE &amp; CHSE Odisha). NIOS graduates are fully eligible for NEET, JEE, UPSC, SSC, state civil services, banking, defence, and all regular university degree admissions.
-                        </p>
+            <div class="facilities-grid">
+                <!-- Facility 1: Science Lab -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/facility-science-lab.jpg" alt="Science Lab" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Science Lab</h3>
+                        <p>Fully equipped labs for practical learning</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Can students who failed in Class 10 or 12 apply directly?</span>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Yes. NIOS specifically caters to failed and school-dropout students. Under Stream-2 and Transfer of Credit (TOC) provisions, candidates who failed in other recognized boards (CBSE, ICSE, State Boards) can transfer marks of up to two passed subjects. They need only appear and clear the remaining subjects, saving a valuable academic year.
-                        </p>
+                <!-- Facility 2: Computer Lab -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/facility-computer-lab.jpg" alt="Computer Lab" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Computer Lab</h3>
+                        <p>Modern technology for digital skills</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>What streams and subject options are available for +2 Senior Secondary?</span>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            We provide comprehensive guidance across Arts (History, Political Science, Economics, Odia, English, Geography, Sociology), Commerce (Accountancy, Business Studies, Economics, English), and Science (Physics, Chemistry, Biology, Mathematics). Students enjoy the flexibility to choose combinations that best match their future goals.
-                        </p>
+                <!-- Facility 3: Library -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/facility-library.jpg" alt="Library" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Library</h3>
+                        <p>Extensive collection of books and resources</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>Can working professionals and homemakers enroll in Graduation or Post Graduation?</span>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            Yes. Through our affiliated UGC-recognized partner universities, working candidates, college dropouts, and homemakers can enroll in B.A, B.Com, B.Sc, B.C.A, B.B.A, M.A, M.Com, M.Sc, M.B.A, and M.C.A programs. The flexible exam schedules and study formats are designed specifically to accommodate professional and family commitments.
-                        </p>
+                <!-- Facility 4: Sports Ground -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/facility-sports.jpg" alt="Sports Ground" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Sports Ground</h3>
+                        <p>Spacious areas for physical activities</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false">
-                        <span>What specific support does NIOS Career Point Berhampur provide?</span>
-                        <span class="faq-toggle-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>
-                            We offer complete handholding throughout your educational cycle: personal stream counselling, accurate online portal registration, textbook distribution, Tutor Marked Assignment (TMA) preparation and portal submission, practical lab guidelines, exam hall ticket distribution, and final marksheet delivery with post-exam academic guidance.
-                        </p>
+                <!-- Facility 5: Smart Classroom -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/about-thumb-1.jpg" alt="Smart Classroom" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Smart Classroom</h3>
+                        <p>Interactive learning with latest technology</p>
+                    </div>
+                </div>
+
+                <!-- Facility 6: Health & Safety -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/hero-student-1.jpg" alt="Health & Safety" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Health &amp; Safety</h3>
+                        <p>Medical facilities and safety protocols</p>
+                    </div>
+                </div>
+
+                <!-- Facility 7: Art & Music Studio -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/about-thumb-2.jpg" alt="Art & Music Studio" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Art &amp; Music Studio</h3>
+                        <p>Creative space for painting, crafting, and music</p>
+                    </div>
+                </div>
+
+                <!-- Facility 8: Cafeteria -->
+                <div class="facility-card">
+                    <div class="facility-img-wrap">
+                        <img src="assets/images/about-thumb-3.jpg" alt="Cafeteria" class="facility-img" width="300" height="225" loading="lazy">
+                    </div>
+                    <div class="facility-content">
+                        <h3>Cafeteria</h3>
+                        <p>Clean, hygienic and healthy food options</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 9. CONTACT CTA BANNER -->
-    <section class="cta-banner-section">
-        <div class="container cta-banner-grid">
-            <div class="cta-banner-content">
-                <h2>Begin Your Academic Journey with Confidence</h2>
-                <p>
-                    Do not let past difficulties hinder your future. Contact our Berhampur counsellors today to secure recognized qualifications.
-                </p>
+    <!-- 6. FREQUENTLY ASKED QUESTIONS ACCORDION -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Have questions about admissions, exams, or recognition? Find direct answers below or contact our counselling team.</p>
+                    <a href="contact.php" class="btn btn-secondary">
+                        <span>Have More Questions?</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Are NIOS certificates valid for government jobs &amp; higher education?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, absolutely. NIOS (National Institute of Open Schooling) is an autonomous institution under the Ministry of Education, Government of India. NIOS certificates are 100% equivalent to CBSE, ICSE, and state boards (BSE/CHSE Odisha) and recognized for NEET, JEE, UPSC, SSC, defence, and all universities worldwide.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Who is eligible for Direct 10th and +2 admissions?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Students aged 14+ with basic reading/writing skills are eligible for Direct 10th. For +2 Senior Secondary, candidates who have passed 10th from any recognized board can enroll. Failed candidates can also utilize the Credit Transfer (TOC) system to save their academic year.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>Can working professionals and college dropouts continue graduation?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Through our affiliated UGC-recognized partner universities, working candidates and college dropouts can enroll in B.A, B.Com, B.Sc, B.C.A, B.B.A, M.A, M.Com, M.Sc, M.B.A, and M.C.A programs with flexible weekend study schedules.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>What support does NIOS Career Point Berhampur provide?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We provide full handholding: stream counselling, portal registration, textbook distribution, TMA (Tutor Marked Assignment) preparation and portal submission, practical lab guidelines, exam hall tickets, and marksheet verification.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="cta-banner-actions">
-                <a href="contact.php" class="btn btn-primary" style="background-color: var(--color-gold); color: var(--color-navy); border-color: var(--color-gold);">
-                    Enquire for Admission Now →
-                </a>
-                <span class="cta-direct-call">
-                    Call Helplines: <strong>+91 93981 61800</strong>
-                </span>
+        </div>
+    </section>
+
+    <!-- 7. FINAL ADMISSIONS CTA BANNER -->
+    <section class="cta-section" id="enquiry">
+        <div class="container">
+            <div class="cta-banner-container">
+                <!-- Concentric Rings Decorative Pattern -->
+                <svg class="cta-rings-bg" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="300" cy="300" r="260" stroke="#FFFFFF" stroke-width="2"/>
+                    <circle cx="300" cy="300" r="190" stroke="#FFFFFF" stroke-width="2"/>
+                    <circle cx="300" cy="300" r="120" stroke="#FFFFFF" stroke-width="2"/>
+                </svg>
+
+                <div class="cta-content">
+                    <div class="cta-eyebrow">Admissions Open 2026–2027</div>
+                    <h2 class="cta-title">Begin Your Academic Journey with Confidence</h2>
+                    <p class="cta-desc">Do not let past difficulties hinder your future. Contact our Berhampur counsellors today to secure recognized qualifications.</p>
+                    <div class="cta-actions" style="margin-top: 2rem; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                        <a href="contact.php" class="btn" style="background-color: #FFFFFF; color: var(--color-primary-blue); font-weight: 700; padding: 0.95rem 2.2rem; border-radius: 12px; box-shadow: 0 10px 26px rgba(0,0,0,0.12);">
+                            Enquire for Admission Now →
+                        </a>
+                        <a href="tel:+919398161800" class="btn" style="background-color: rgba(255,255,255,0.12); color: #FFFFFF; border: 1.5px solid rgba(255,255,255,0.3); font-weight: 600; padding: 0.95rem 1.8rem; border-radius: 12px;">
+                            📞 +91 93981 61800
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
